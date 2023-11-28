@@ -368,13 +368,13 @@ if __name__ == '__main__':
     _submission.to_csv(os.path.join('data', 'submission.csv'), sep=',', index=False)
 
 
-    X_train, X_val, y_train, y_val = my_train_test_split(final_dataset)
-    X_train, X_val = drop_bad_columns(X_train, X_val)
+    # X_train, X_val, y_train, y_val = my_train_test_split(final_dataset)
+    # X_train, X_val = drop_bad_columns(X_train, X_val)
 
-    test_df = load_test_dataset(os.path.join('..', 'external', 'private', 'X_test_private.csv'))
-    final_test= concate_test_and_pedigree(test_df)
-    final_test = change_date(final_test)
-    X_train, X_val, final_test = normalization_data(X_train, X_val, final_test)
+    # test_df = load_test_dataset(os.path.join('..', 'external', 'private', 'X_test_private.csv'))
+    # final_test= concate_test_and_pedigree(test_df)
+    # final_test = change_date(final_test)
+    # X_train, X_val, final_test = normalization_data(X_train, X_val, final_test)
 
-    _submission_private = my_predict(model, final_test, os.path.join('..', 'external', 'private', 'X_test_private.csv'))
-    _submission_private.to_csv(os.path.join('data', 'submission_private.csv'), sep=',', index=False)
+    # _submission_private = my_predict(model, final_test, os.path.join('..', 'external', 'private', 'X_test_private.csv'))
+    # _submission_private.to_csv(os.path.join('data', 'submission_private.csv'), sep=',', index=False)
