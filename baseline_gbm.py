@@ -10,9 +10,9 @@ import numpy as np
 import pandas as pd
 
 
-PUBLIC_TEST_DATASET_NAME = 'X_test_public.csv'
-
-
+#PUBLIC_TEST_DATASET_NAME = 'X_test_public.csv'
+#
+#
 @dataclass
 class AnimalMetadata:
     """Метаданные животного, включая временной ряд"""
